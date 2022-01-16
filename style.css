@@ -6,6 +6,24 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #cad5e2;
 }
+/* header  */
+header {
+  padding: 5%;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-item ul {
+  display: flex;
+  text-decoration: none;
+}
+.menu-item ul li {
+  list-style: none;
+  margin-right: 1em;
+}
+/* main  */
 h1 {
   font-size: 40px;
   font-weight: 2em;
@@ -43,7 +61,7 @@ p {
   display: inline-block;
 }
 /* Top-section */
-.container {
+.top-container {
   display: flex;
   align-items: center;
 }
@@ -87,25 +105,94 @@ p {
 .fa-star.empty {
   color: #a2a2a2;
 }
+.more-button {
+  color: black;
+  font-size: 25px;
+  font-weight: 300;
+  text-decoration: none;
+  width: 15%;
+  float: right;
+}
+.more-button .fa-arrow-right {
+  display: none;
+}
+.more-button:hover .fa-arrow-right {
+  display: inline-block;
+}
+.all-service {
+  margin-bottom: 5%;
+}
+
+/* Satisfied-Buyer */
+
+.buyer h2 {
+  text-align: center;
+}
+.all-buyer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buyer-img {
+  display: flex;
+  align-items: center;
+}
+.buyer-img img {
+  width: 70px;
+  height: 70px;
+}
+
+.buyer-title {
+  text-align: center;
+}
+.buyer1 {
+  background-color: white;
+  padding: 5%;
+  margin: 5%;
+  border-radius: 2%;
+}
+
+/* Footer section  */
+footer {
+  background-color: black;
+  color: white;
+  padding: 3% 3%;
+  text-align: center;
+}
+
 /* Mobile Device */
+
 @media only screen and (max-width: 688px) {
-  .container {
+  .top-container {
     display: block;
   }
-  .services{
-      display: block;
+  .services {
+    display: block;
   }
   .half-width {
     width: 90%;
     margin-top: 5%;
+  }
+  .more-button {
+    width: 94%;
+  }
+  .all-buyer {
+    display: block;
   }
 }
 
 /* Tablet devices */
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-    .services {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .more-button {
+    width: 94%;
+  }
+  .all-buyer {
+    display: block;
+  }
 }
