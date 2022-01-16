@@ -4,10 +4,21 @@ body {
   margin: 0;
   padding: 10px 10px;
   font-family: "Poppins", sans-serif;
+  background-color: #cad5e2;
 }
 h1 {
   font-size: 40px;
   font-weight: 2em;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 25px;
+}
+h4 {
+  font-size: 2em;
+  font-weight: lighter;
 }
 p {
   line-height: 2em;
@@ -32,7 +43,7 @@ p {
   display: inline-block;
 }
 /* Top-section */
-.top-section {
+.container {
   display: flex;
   align-items: center;
 }
@@ -43,11 +54,46 @@ p {
 .half-width img {
   width: 80%;
 }
-
+/* Services and Review section */
+.service-title {
+  text-align: center;
+  margin-top: 5%;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-column-gap: 1em;
+  padding: 5%;
+}
+.service {
+  background-color: white;
+  margin-bottom: 5%;
+  padding: 4% 4%;
+  border-radius: 2%;
+}
+.service .service-banner img {
+  width: 100%;
+}
+.price {
+  font-weight: lighter;
+}
+.fa-star {
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #a2a2a2;
+}
 /* Mobile Device */
 @media only screen and (max-width: 688px) {
-  .top-section {
+  .container {
     display: block;
+  }
+  .services{
+      display: block;
   }
   .half-width {
     width: 90%;
@@ -58,4 +104,8 @@ p {
 /* Tablet devices */
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
+    .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
 }
