@@ -1,0 +1,61 @@
+/* common property */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 10px 10px;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 2em;
+}
+p {
+  line-height: 2em;
+}
+.button {
+  text-decoration: none;
+  background-color: #22cb5c;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 5%;
+  font-weight: 200;
+  font-size: 22px;
+}
+.button .fa-arrow-right {
+  display: none;
+}
+.button:hover {
+  padding: 10px 40px;
+  transition: padding 0.5s ease-in-out;
+}
+.button:hover .fa-arrow-right {
+  display: inline-block;
+}
+/* Top-section */
+.top-section {
+  display: flex;
+  align-items: center;
+}
+.half-width {
+  width: 50%;
+  padding-left: 5%;
+}
+.half-width img {
+  width: 80%;
+}
+
+/* Mobile Device */
+@media only screen and (max-width: 688px) {
+  .top-section {
+    display: block;
+  }
+  .half-width {
+    width: 90%;
+    margin-top: 5%;
+  }
+}
+
+/* Tablet devices */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+}
