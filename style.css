@@ -8,7 +8,7 @@ body {
 }
 /* header  */
 header {
-  padding: 5%;
+  padding: 2% 5%;
 }
 .menu {
   display: flex;
